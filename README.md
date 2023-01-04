@@ -3,7 +3,8 @@
 ### Overview
 RichTextView is a subclass of UIView that allows the user to display and edit rich text content with various font styles, including bold, italic, normal, and strikethrough. It is implemented as a drop-in replacement for UITextView. RichTextView is a convenient and easy-to-use View for displaying and editing rich text content in your iOS applications.
 
-![Screenshot of RichTextView](../other/screenshot.png)
+![Screenshot of RichTextView](https://github.com/rloniello/RichTextView/blob/main/Other/screenshot.png)
+
 
 ### Use
 1) Download / Clone or Copy the `RichTextView.swift` in this repository. Add it to your Project. (You may also want to copy tests as well).
