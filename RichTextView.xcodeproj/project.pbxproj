@@ -49,6 +49,9 @@
 		D2183BAA28CA681E0028ACD3 /* RichTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextViewUITests.swift; sourceTree = "<group>"; };
 		D2183BAC28CA681E0028ACD3 /* RichTextViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D2183BBA28CA68E70028ACD3 /* RichTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextView.swift; sourceTree = "<group>"; };
+		D293B251296510FC0047EE66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D293B253296518130047EE66 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		D293B255296519130047EE66 /* richtextviewinaction.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = richtextviewinaction.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		D2183B7D28CA681C0028ACD3 = {
 			isa = PBXGroup;
 			children = (
+				D293B251296510FC0047EE66 /* README.md */,
+				D293B252296517B30047EE66 /* Other */,
 				D2183B8828CA681C0028ACD3 /* RichTextView */,
 				D2183B9F28CA681E0028ACD3 /* RichTextViewTests */,
 				D2183BA928CA681E0028ACD3 /* RichTextViewUITests */,
@@ -133,6 +138,15 @@
 				D2183BBA28CA68E70028ACD3 /* RichTextView.swift */,
 			);
 			path = RichTextView;
+			sourceTree = "<group>";
+		};
+		D293B252296517B30047EE66 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D293B253296518130047EE66 /* screenshot.png */,
+				D293B255296519130047EE66 /* richtextviewinaction.gif */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
