@@ -7,13 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    private var richTextView: RichTextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
+        self.richTextView = RichTextView()
+        self.setupSubviews()
     }
 
-
+    func setupSubviews() {
+        self.richTextView.center = self.view.center
+        self.view.addSubview(self.richTextView)
+    }
+    
 }
-

@@ -10,27 +10,45 @@ import XCTest
 
 class RichTextViewTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testEmptyText() throws {
+        let richTextView = RichTextView()
+        XCTAssertEqual(richTextView.attributedText.string, "")
+    }
+    
+    func testSetSimpleText() throws {
+        let richTextView = RichTextView()
+        let textString = "Rich Text Here"
+        richTextView.setText(textString)
+        XCTAssertEqual(richTextView.attributedText.string, textString)
+    }
+    
+    func testSetAttributedText() throws {
+        let richTextView = RichTextView()
+        let attrString = NSAttributedString(string: "Rich Text Here")
+        richTextView.setAttributedString(attrString)
+        XCTAssertEqual(richTextView.attributedText, attrString)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testBoldAttributedText() throws {
+        let richTextView = RichTextView()
+        let attrString = NSAttributedString(string: "Rich Text Here", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: UIFont.systemFontSize, weight: .bold)])
+        richTextView.setAttributedString(attrString)
+        XCTAssertEqual(richTextView.attributedText, attrString)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testItalicAttributedText() throws {
+        let richTextView = RichTextView()
+        let attrString = NSAttributedString(string: "Rich Text Here", attributes:[NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: UIFont.systemFontSize)])
+        richTextView.setAttributedString(attrString)
+        XCTAssertEqual(richTextView.attributedText, attrString)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testStrikethroughAttributedText() throws {
+        let richTextView = RichTextView()
+        let attrString = NSAttributedString(string: "Rich Text Here", attributes: [
+            NSAttributedString.Key.strikethroughStyle: 1])
+        richTextView.setAttributedString(attrString)
+        XCTAssertEqual(richTextView.attributedText, attrString)
     }
-
+    
 }
