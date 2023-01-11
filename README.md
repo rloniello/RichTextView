@@ -9,7 +9,7 @@ RichTextView is a subclass of UIView that allows the user to display and edit ri
 ### Use
 1) Download / Clone or Copy the `RichTextView.swift` in this repository. Add it to your Project. (You may also want to copy tests as well).
 
-2) To use RichTextView, you simply need to create an instance of it and add it to your view hierarchy.
+2) To use RichTextView, you simply need to create an instance of it, then add it to your view hierarchy.
 The Intrisic content size is 300 (width) x 200 (height). You can create your own frame during initialization or add custom constraints after initialization like a regular UIView.
 
 ```swift
